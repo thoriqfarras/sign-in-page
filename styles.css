@@ -110,6 +110,7 @@ input {
     width: var(--inp-box-w);
     height: 3rem;
     
+    font-family: Spiegel;
     font-size: 1.7rem;
 }
 
