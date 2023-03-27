@@ -118,8 +118,16 @@ input[type="email"] {
 }
 
 button {
-    width: 8rem;
+    width: 14rem;
     height: 3rem;
+
+    border: 0;
+    border-radius: 20px;
+    background-color: #dc9c3d;
+    color: white;
+
+    font-family: Beaufort;
+    font-size: 1.3rem;
 }
 
 /* ============================================ */
