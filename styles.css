@@ -18,14 +18,12 @@ html {
 }
 
 body {
+    display: flex;
+
     width: 100vw;
     min-height: 100vh;
     padding: 0;
     margin: 0;
-}
-
-body {
-    display: flex;
 }
 
 #image {
@@ -37,10 +35,9 @@ body {
 }
 
 #right {
+    box-sizing: border-box;
     min-height: 100%;
     width: 60%;
-    
-    padding-left: 4rem;
 }
 
 #right img {
@@ -55,6 +52,13 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 /* ===================FORM CONTROLS================ */
@@ -62,6 +66,8 @@ body {
 ul {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
     
     padding: 0;
     width: var(--form-box-w);
@@ -72,7 +78,7 @@ ul {
 li {
     list-style: none;
     
-    margin-right: 1rem;
+    /* margin-right: 1rem; */
 }
 
 li:last-child {
@@ -109,8 +115,6 @@ button {
     }
 
     #right {
-        box-sizing: border-box;
-        min-height: 100%;
         width: 100vw;
         padding: 0;
     }
