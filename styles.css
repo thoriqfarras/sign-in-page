@@ -8,8 +8,16 @@
 :root {
     --form-box-w: 40rem;
     --inp-box-w: calc((var(--form-box-w) - 3rem) / 2);
-    --h1-font: "assets/Beaufort/Beaufort Extended Bold.otf";
-    --font: "assets/Spiegel Sans Trial Fonts/OTF/SpiegelSans-5Regular_TRIAL.otf";
+}
+
+@font-face {
+    font-family: Beaufort;
+    src: url("assets/Beaufort Bold.otf") format("opentype");
+}
+
+@font-face {
+    font-family: Spiegel;
+    src: url("assets/spiegel.ttf") format("truetype");
 }
 
 html {
@@ -60,6 +68,11 @@ body {
     align-items: center;
 
     color: darkgray;
+    font-family: Spiegel;
+}
+
+h1 {
+    font-family: Beaufort;
 }
 
 form {
