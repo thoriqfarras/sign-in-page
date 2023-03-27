@@ -30,7 +30,7 @@ body {
     min-height: 100%;
     width: 40%;
     
-    background-image: url("./image.png");
+    background-image: url("assets/image.png");
     background-position: center;
 }
 
