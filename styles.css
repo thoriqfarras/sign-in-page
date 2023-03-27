@@ -7,7 +7,9 @@
 
 :root {
     --form-box-w: 40rem;
-    --inp-box-w: calc((var(--form-box-w) - 3rem) / 2); 
+    --inp-box-w: calc((var(--form-box-w) - 3rem) / 2);
+    --h1-font: "assets/Beaufort/Beaufort Extended Bold.otf";
+    --font: "assets/Spiegel Sans Trial Fonts/OTF/SpiegelSans-5Regular_TRIAL.otf";
 }
 
 html {
