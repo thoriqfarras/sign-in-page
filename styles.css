@@ -139,6 +139,20 @@ input:focus {
     border: 2px solid #dc3d4b;
 }
 
+input:focus:invalid {
+    border-color: rgb(211, 0, 0);
+    box-shadow: inset 0px 0px 4px 2px rgb(211, 0, 0);
+}
+
+input:focus:valid {
+    border-color: rgb(0, 167, 0);
+    box-shadow: inset 0px 0px 4px 2px rgb(0, 167, 0);
+}
+
+input:valid {
+    border-color: rgb(0, 167, 0);
+}
+
 input[type="email"] {
     width: calc(var(--inp-box-w) * 2 + 1rem);
 }
