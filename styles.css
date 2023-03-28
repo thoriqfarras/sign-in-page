@@ -181,7 +181,13 @@ input:not([id="confirm-pw"]):valid {
 }
 
 input:not([id="confirm-pw"]):placeholder-shown {
+    /* This is for the 'default' state where input is empty*/
     border: 2px solid darkgray; 
+}
+
+input[id='user-pw']:focus:invalid + span:after {
+    content: "Password length >= 8 characters";
+    color:rgb(211, 0, 0);
 }
 
 button:hover {
@@ -239,7 +245,7 @@ p > a:hover {
     
     li {
         padding: 0;
-        margin: 0;
+        margin: 0 0 16px 0;
     }
 
     label {
