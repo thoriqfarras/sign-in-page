@@ -194,10 +194,6 @@ button:hover {
     background-color: #dc3d4b;
 }
 
-button:focus {
-    background-color: #bb333e;
-}
-
 p > a {
     color: #dc3d4b;
 }
