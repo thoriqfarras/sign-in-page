@@ -132,6 +132,21 @@ input {
     color: lightgray;
 }
 
+button {
+    width: 14rem;
+    height: 3rem;
+
+    border: 0;
+    border-radius: 20px;
+    background-color: #dc9c3d;
+    color: white;
+
+    font-family: Beaufort;
+    font-size: 1.3rem;
+}
+
+/* ===========FORM INTERACTIONS============ */
+
 input:focus {
     outline: none;
 
@@ -157,8 +172,12 @@ input[type="email"] {
     width: calc(var(--inp-box-w) * 2 + 1rem);
 }
 
-input[type="password"] {
-    font-size: 
+button:hover {
+    background-color: #dc3d4b;
+}
+
+button:focus {
+    background-color: #bb333e;
 }
 
 p > a {
@@ -168,29 +187,6 @@ p > a {
 p > a:hover {
     color: #dc9c3d;
 }
-
-button {
-    width: 14rem;
-    height: 3rem;
-
-    border: 0;
-    border-radius: 20px;
-    background-color: #dc9c3d;
-    color: white;
-
-    font-family: Beaufort;
-    font-size: 1.3rem;
-}
-
-button:hover {
-    background-color: #dc3d4b;
-}
-
-button:focus {
-    background-color: #bb333e;
-}
-
-/* ============================================ */
 
 @media only screen and (max-width: 1068px) {
     #image {
