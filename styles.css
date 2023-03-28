@@ -132,6 +132,17 @@ input {
     color: lightgray;
 }
 
+input[type="email"] {
+    width: calc(var(--inp-box-w) * 2 + 1rem);
+}
+
+span {
+    position: absolute;
+    left: 6px;
+
+    font-size: 1rem;
+}
+
 button {
     width: 14rem;
     height: 3rem;
@@ -149,27 +160,28 @@ button {
 
 input:focus {
     outline: none;
-
-    border: 0;
-    border: 2px solid #dc3d4b;
 }
 
-input:focus:invalid {
+input:not([id="confirm-pw"]):focus:invalid {
     border-color: rgb(211, 0, 0);
     box-shadow: inset 0px 0px 4px 2px rgb(211, 0, 0);
 }
 
-input:focus:valid {
+input:not([id="confirm-pw"]):focus:valid {
     border-color: rgb(0, 167, 0);
     box-shadow: inset 0px 0px 4px 2px rgb(0, 167, 0);
 }
 
-input:valid {
+input:not([id="confirm-pw"]):invalid {
+    border-color: rgb(211, 0, 0);
+}
+
+input:not([id="confirm-pw"]):valid {
     border-color: rgb(0, 167, 0);
 }
 
-input[type="email"] {
-    width: calc(var(--inp-box-w) * 2 + 1rem);
+input:not([id="confirm-pw"]):placeholder-shown {
+    border: 2px solid darkgray; 
 }
 
 button:hover {
